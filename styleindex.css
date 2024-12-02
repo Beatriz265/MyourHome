@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00A3E0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.animal {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.animal img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+.buttons button, .buttons a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #F28B82; 
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.buttons a {
+    margin-left: 10px;
+}
+.buttons button:hover, .buttons a:hover {
+    background-color: #FF6F61; 
+}

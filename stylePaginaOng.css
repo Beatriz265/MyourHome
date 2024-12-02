@@ -1,0 +1,107 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F4F8; /* Um tom mais claro para o fundo */
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #3A5E97; /* Azul escuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilo para cada animal */
+.animal {
+    background: #ffffff; /* Branco para o cartão do animal */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Arredondamento mais suave */
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s; /* Efeito de transformação */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.animal:hover {
+    transform: translateY(-5px); /* Levanta o cartão ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+.animal img {
+    max-width: 100%;
+    border-radius: 10px; /* Arredondamento das imagens */
+}
+
+/* Estilo dos botões */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.buttons button, .buttons a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #F28B82; 
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s; /* Transição suave */
+}
+
+.buttons a {
+    margin-left: 10px;
+}
+
+.buttons button:hover, .buttons a:hover {
+    background-color: #FF6F61; 
+    transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+}
+
+/* Estilo para mensagens de feedback */
+.feedback {
+    margin: 20px;
+    padding: 10px;
+    background-color: #e7f3fe;
+    color: #31708f;
+    border: 1px solid #bce8f1;
+    border-radius: 5px;
+}
+
+/* Estilo para textos de boas-vindas */
+.welcome-message {
+    font-size: 18px; /* Tamanho maior para destaque */
+    margin: 10px 0;
+}
+
+/* Estilo para títulos de animais */
+.animal h2 {
+    font-size: 20px; /* Tamanho do título */
+    margin: 10px 0;
+    color: #3A5E97; /* Cor do título */
+}
